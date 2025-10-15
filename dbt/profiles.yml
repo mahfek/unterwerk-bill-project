@@ -1,0 +1,10 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      schema: default  # your schema
+      host: <your-databricks-host>
+      http_path: <your-cluster-http-path>
+      token: <your-access-token>
+      catalog: hive_metastore  # or unity catalog
